@@ -54,6 +54,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ## TEMPORARY HACK: skip building external/chromium_org/
 #PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
 ENABLE_WEBGL := true
-# Memory
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.low_ram=true
