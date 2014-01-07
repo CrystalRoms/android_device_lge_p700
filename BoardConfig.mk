@@ -55,5 +55,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
 ENABLE_WEBGL := true
 # Memory
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    ro.config.low_ram=true
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.low_ram=true
