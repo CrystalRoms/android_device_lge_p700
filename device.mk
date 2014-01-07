@@ -40,3 +40,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.debuggable=1 \
     persist.service.adb.enable=1
 
+# CrystalRoms - bootanimation
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/bootanimation.zip:system/media/bootanimation.zip
+
+# CrystalRoms - Trebuchet
+PRODUCT_PACKAGES += Trebuchet
+
