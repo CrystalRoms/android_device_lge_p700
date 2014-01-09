@@ -34,7 +34,7 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
 USE_SET_METADATA := false
 SKIP_SET_METADATA := true
 DISABLE_OTA := true
-WITH_DEXPREOPT := true
+#WITH_DEXPREOPT := true
 RECOVERY_CANT_USE_CONFIG_EXT4_FS_XATTR := true
 
 PRODUCT_LOCALES := en_US en_IN fr_FR it_IT es_ES et_EE de_DE nl_NL cs_CZ \
@@ -51,6 +51,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dexopt-data-only=1 \
     dalvik.vm.dexopt-flags=v=a,o=v,m=y,u=y
 
-## TEMPORARY HACK: skip building external/chromium_org/
-#PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
+# Memory
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.config.low_ram=true
+
+##Webkit	
 ENABLE_WEBGL := true
+TARGET_WEBKIT_USE_MORE_MEMORY := true
+PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
+TARGET_FORCE_CPU_UPLOAD := true
+TARGET_ARCH_LOWMEM := true
+

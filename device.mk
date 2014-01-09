@@ -29,6 +29,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnetcmdiface
 
+#LibWebCore
+PRODUCT_PACKAGES += \
+    libwebcore
+	
 #bluetooth
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/bin/hwmac:system/bin/hwmac \
