@@ -51,10 +51,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dexopt-data-only=1 \
     dalvik.vm.dexopt-flags=v=a,o=v,m=y,u=y
 
-# Memory
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.config.low_ram=true
-
 ##Webkit	
 ENABLE_WEBGL := true
 TARGET_WEBKIT_USE_MORE_MEMORY := true
