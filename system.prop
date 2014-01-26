@@ -4,7 +4,3 @@
 debug.camcorder.disablemeta=1
 ro.sf.hwrotation=180
 ro.sf.lcd_density=200
-ro.config.low_ram=true
-
-persist.sys.themeId=TouchWiz 5.0
-persist.sys.themePackageName=com.thomassafca.theme.touchwiz.five.free
